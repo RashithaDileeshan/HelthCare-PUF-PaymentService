@@ -11,6 +11,8 @@ import model.Payment;
 
 public class PaymentService {
 	
+	
+//add payment	
 	public String insertPayments(String patientName, Long amount,Date paydate, String address,String contactNo,String email) {
 		String output = "";
 		try {
@@ -42,6 +44,8 @@ public class PaymentService {
 		return output;
 	}
 
+	
+//read all payments
 	public String readPayments() {
 		String output = "";
 		try {
@@ -90,6 +94,8 @@ public class PaymentService {
 		return output;
 	}
 	
+	
+//update payment details	
 	public String updatePayment(String paymentId,String patientName, Long amount,String paydate, String address,String contactNo,String email) {
 		String output = "";
 		try {
@@ -120,6 +126,8 @@ public class PaymentService {
 		return output;
 	}
 
+	
+//delete payment details	
 	public String deletepayment(String paymentId) {
 		String output = "";
 		try {
